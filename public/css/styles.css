@@ -21,18 +21,17 @@ body{
 header{
     background-color: var(--color-amarillo);
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 #logo_meli{
-    width: 35%;
+    width: 50%;
     margin-bottom: 20px;
     margin-top: 20px;
-    margin-left: 20px;
 }
 
 .barra_busqueda{
-    margin-left: 8%;
+    width: 50%;
     background-color: var(--color-grisClaro);
     color: var(--color-grisOscuro);
     font-weight: bold;
@@ -40,9 +39,7 @@ header{
     margin-bottom: auto;
 }
 .lupa{
-    background-color: var(--color-grisClaro);
-    font-size: 16px;
-    margin-left: 3px;
+    font-size: 14px;
     margin-bottom: auto;
 }
 #subtitulo1{
@@ -57,12 +54,12 @@ header{
 .lista_menu1 ul{
     list-style: none;
     font-size: 12px;
-    margin: 0;
+    margin: 0px;
 }
 .lista_menu2 ul{
     font-size: 12px;
     list-style: none;
-    margin:0
+    margin:0px;
 }
 
 .burger-menu{
@@ -102,7 +99,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-content: center;
+    /* align-content: center; */
     width: 90%;
     margin: 10px auto;
 }
@@ -112,7 +109,7 @@ main{
     border-top-color: #ebebeb;
     border-top-style: solid;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
 .subtitulo_body{
@@ -124,25 +121,32 @@ main{
 }
 
 .camion{
+    display: block;
     color: var(--color-verde);
+    background-color: white;
     border: solid 1px;
     border-radius: 50%;
     padding: 5px;
     width: 20px;
     height: 20px;
+    position: relative;
+    left: 85%;
+    top: -15px;
 }
 
 .precio{
     font-size: 18px;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 30%;
 }
 
 .descuento{
     font-size: 16px;
     color: var(--color-verde);
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 70%;
 }
 .descripcion{
     color: var(--color-grisOscuro);
@@ -181,6 +185,7 @@ footer h4{
     align-items: center;
 }
 
+/* edición segun el dispositivo */
 
 @media (max-width: 767px) {
     .lista_menu1{
@@ -202,6 +207,7 @@ footer h4{
 @media (min-width: 768px) {
     .articulo{
         box-shadow : 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
     }
     #subtitulo1{
         justify-content: center;
@@ -210,7 +216,71 @@ footer h4{
     .burger-menu{
         display: none;
     }
+    
+    .subtitulo_body{
+        width: 90%;
+    }
+    
+    .detalles_de_articulos{
+        display: flex;
+        flex-wrap: wrap;
+    }
 
+    .descuento{
+        width: 60%;
+        float: left;
+    }
+    .precio{
+        float: left;
+    }
+    .descripcion{
+        margin-left: 10%;
+    }
+
+    #logo_meli{
+        width: 33%;
+    }
+    .barra_busqueda{
+        width: 33%;
+    }
+    #subtitulo1{
+        width: 33%;
+    }
+
+    .lista_menu1 ul{
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+    }
+    .lista_menu2 ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .lista_menu1 li{
+        margin: 10px;
+
+    }
+    .lista_menu2 li{
+        margin: 10px;
+    }
+
+    .lista_menu1{
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 0px;
+    }
+    .lista_menu2{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1024px) {
+    .articulo{
+        width: 23%;
+    }
 }
 
 
