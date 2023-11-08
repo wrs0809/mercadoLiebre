@@ -32,15 +32,20 @@ header{
 
 .barra_busqueda{
     width: 50%;
-    background-color: var(--color-grisClaro);
     color: var(--color-grisOscuro);
     font-weight: bold;
-    font-size: 14px;
+    font-size: 10px;
     margin-bottom: auto;
+    justify-content: center;
+
+}
+.barra_busqueda span{
+    background-color: white;
 }
 .lupa{
     font-size: 14px;
     margin-bottom: auto;
+    margin-left: 3px;
 }
 #subtitulo1{
     font-size: 12px;
@@ -99,7 +104,6 @@ main{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /* align-content: center; */
     width: 90%;
     margin: 10px auto;
 }
@@ -109,7 +113,6 @@ main{
     border-top-color: #ebebeb;
     border-top-style: solid;
     display: flex;
-    /* flex-direction: column; */
 }
 
 .subtitulo_body{
@@ -242,6 +245,7 @@ footer h4{
     }
     .barra_busqueda{
         width: 33%;
+        font-size: 14px;
     }
     #subtitulo1{
         width: 33%;
@@ -282,6 +286,9 @@ footer h4{
         width: 23%;
     }
 }
+
+
+
 
 
 
