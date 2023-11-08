@@ -1,0 +1,98 @@
+/* edición segun el dispositivo */
+
+@media (max-width: 767px) {
+    .lista_menu1{
+        display: none;
+    }
+    .lista_menu2{
+        display: none;
+    }
+    .descripcion{
+        display: none;
+    }
+
+    footer p{
+        width: 60%;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .articulo{
+        box-shadow : 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
+    }
+    #subtitulo1{
+        justify-content: center;
+        margin: auto;
+    }
+    .burger-menu{
+        display: none;
+    }
+    
+    .subtitulo_body{
+        width: 90%;
+    }
+    
+    .detalles_de_articulos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .descuento{
+        width: 60%;
+        float: left;
+    }
+    .precio{
+        float: left;
+    }
+    .descripcion{
+        margin-left: 10%;
+    }
+
+    #logo_meli{
+        width: 33%;
+    }
+    .barra_busqueda{
+        width: 33%;
+        font-size: 14px;
+    }
+    #subtitulo1{
+        width: 33%;
+    }
+
+    .lista_menu1 ul{
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+    }
+    .lista_menu2 ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .lista_menu1 li{
+        margin: 10px;
+
+    }
+    .lista_menu2 li{
+        margin: 10px;
+    }
+
+    .lista_menu1{
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 0px;
+    }
+    .lista_menu2{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1024px) {
+    .articulo{
+        width: 23%;
+    }
+}
