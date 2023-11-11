@@ -1,0 +1,61 @@
+form{
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.camposDeFormulario{
+    width: 97%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 0;;
+    padding: 5px;
+}
+
+.opciones_check div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#foto_usuario{
+    margin-top: 20;
+    margin-bottom: 20px;
+}
+.boton_enviar button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--color-celeste);
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    border: 0px;
+}
+.boton_borrar button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    border-width: 1px;
+}
+
+
+@media (min-width: 768px) {
+
+    form{
+        width: 60%;
+    }
+
+    .camposDeFormulario{
+        width: 100%;
+    }
+    form div{
+        justify-content: center;
+        align-items: center;
+    }
+
+}
