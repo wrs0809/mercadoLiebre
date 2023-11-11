@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <script src="https://kit.fontawesome.com/2e2ec8e27e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/body_register.css">
+    <link rel="stylesheet" href="/css/styles.css"> <!--estilos para header y footer -->
+    <link rel="stylesheet" href="/css/body_register.css"> <!--estilos para formulario -->
 </head>
 <body>
     <header>
@@ -39,14 +39,14 @@
     
     <form action="login.html" method="post">
         <div>
-            <h4>Ingrese su e-mail</h4>
-            <input type="email" name="email" id="email" placeholder="E-mail" class="camposDeFormulario">
+            <h4>Ingrese su usuari@</h4>
+            <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuari@" class="camposDeFormulario">
         </div>
         <div>
             <h4>Ingrese su contraseña</h4>
             <input type="password" id="password" placeholder="Contraseña" class="camposDeFormulario">
         </div>
-        <div class="boton_enviar"><button type="submit" value="enviar datos">Enviar</button></div>
+        <div class="boton_enviar"><button type="submit" value="enviar datos"><a href="/index">Enviar</a></button></div>
     </form>
 
     <footer>
