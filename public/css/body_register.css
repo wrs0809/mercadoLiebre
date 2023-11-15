@@ -33,7 +33,14 @@ form{
     border-radius: 5px;
     padding: 5px;
     border: 0px;
+    transition: background-color;
 }
+.boton_enviar:hover button{
+    background-color: #0022AA;
+}
+
+
+
 .boton_borrar button{
     margin-top: 10px;
     margin-bottom: 10px;

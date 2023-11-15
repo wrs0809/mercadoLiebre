@@ -11,6 +11,7 @@
     padding-top: 40px;
     font-size: 2em;
     margin-bottom: 10px;
+    transition: color 500ms;
 }
 
 footer h3{
@@ -18,6 +19,7 @@ footer h3{
 }
 footer p{
     font-size: 12px;
+    margin: auto;
 }
 footer h4{
     font-size: 10px;
@@ -28,4 +30,8 @@ footer h4{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.articulo_pie_de_pagina:hover i{
+    color: #EAC926;
 }
